@@ -26,3 +26,4 @@
 7. Set up the connection in Airflow UI(connections) and Grafana UI(data source).
 8. Import grafana.json to Grafana UI to set up dashboard.
 
+* If you don't want to use Airflow to run it, you can achieve the same goal by directly using /etl/main.py and /elt/main.py.
