@@ -1,3 +1,9 @@
+Tools: 
+- DB: postgresSQL
+- Airflow
+- Dashboard: Grafana
+- Python: python-dotenv, sqlalchemy, apache-airflow, pandas, Kaggle, datetime
+
 # Configuration Guide
 1. Ensure that a PostgreSQL environment is available, or set it up using Docker:
     ```
@@ -27,3 +33,10 @@
 8. Import grafana.json to Grafana UI to set up dashboard.
 
 * If you don't want to use Airflow to run it, you can achieve the same goal by directly using /etl/main.py and /elt/main.py.
+
+# Demo
+## Dashboard
+![image](https://github.com/user-attachments/assets/e927033e-eabe-4871-9032-3f6b2f8bb832)
+![image](https://github.com/user-attachments/assets/4c6f0cc1-6147-4dc9-aa1d-61ba9c773fc1)
+
+
