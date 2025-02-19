@@ -1,0 +1,6 @@
+python-dotenv
+sqlalchemy
+apache-airflow
+pandas
+kaggle
+datetime
