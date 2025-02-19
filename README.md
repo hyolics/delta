@@ -38,5 +38,18 @@ Tools:
 ## Dashboard
 ![image](https://github.com/user-attachments/assets/e927033e-eabe-4871-9032-3f6b2f8bb832)
 ![image](https://github.com/user-attachments/assets/4c6f0cc1-6147-4dc9-aa1d-61ba9c773fc1)
+## PostgreSQL
+### ETL
+![image](https://github.com/user-attachments/assets/8018ea2d-40f1-430a-9d1b-a916b91b9812)
+### ELT
+![image](https://github.com/user-attachments/assets/5a4e97ff-d09c-4a46-a0bf-e9641f6e1b66)
+
+
+
+
+
+
+
+
 
 
