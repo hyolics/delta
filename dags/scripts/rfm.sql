@@ -12,7 +12,7 @@ SELECT
 rfm_data AS (
   SELECT
     customer_id,
-    ('2011-12-11'::DATE - MAX(invoice_date)) AS recency,
+    EXTRACT(days FROM('2011-12-11'::DATE - MAX(invoice_date))) AS recency,
     COUNT(DISTINCT invoice_no) AS frequency
   FROM invoices
   where customer_id!='NaN' and invoice_no NOT LIKE 'C%'
@@ -61,3 +61,17 @@ SELECT *,
     ELSE 'Other'
   END AS customer_segment
 FROM rfm_scores;
+
+
+CREATE TABLE rfm_segment_percentage as 
+WITH rfm_filtered AS (
+  SELECT *
+  FROM rfm
+)
+SELECT 
+  customer_segment,
+  COUNT(*) AS segment_count,
+  COUNT(*) * 100.0 / (SELECT COUNT(*) FROM rfm_filtered) AS segment_percentage
+FROM rfm_filtered
+GROUP BY customer_segment
+ORDER BY segment_percentage DESC;
