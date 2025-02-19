@@ -11,7 +11,7 @@ from modules.etl.transform import *
 if __name__ == "__main__":
     init_db()
     handler = KaggleDataHandler(dataset_name="carrie1/ecommerce-data")
-    # handler.download_kaggle_data()
+    handler.download_kaggle_data()
     df = handler.extract_data()
     
     load_main_data_to_db(df)
